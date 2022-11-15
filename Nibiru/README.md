@@ -10,16 +10,15 @@
 [nibiru-website]: https://docs.nibiru.fi
 [nibiru-discord]: https://discord.com/invite/pgArXgAxDD
 
-|        Sections           |   Description                          |                       
+|Sections|Description|
 |-----------------------:|------------------------------------------:|
 | [Install the basic environment](#go) | Install golang. Command to check the version|
 | [Install other necessary environments](#necessary) | Clone repository. Compilation project |
 | [Run Node](#run) |  Initialize node. Create configuration file. Check logs & sync status. |
 | [Create Validator](#validator) |  Create valdator & wallet, check your balance. |
 | [Useful commands](https://github.com/cosmoswalk/Cosmos_tutorials/blob/main/Useful%20Tools/Other%20commands.md) | The other administration commands. |
-[<img align="right" width="100px" alt="nibiru" src="https://i.ibb.co/865XFvQ/Niburu.png">](https://docs.nibiru.fi/)
-    
 
+ <p align="center"><a href="https://docs.nibiru.fi/"><img align="right"width="100px"alt="nibiru" src="https://i.ibb.co/865XFvQ/Niburu.png"></p</a>
 
 | Minimum configuration                                                                                |
 |------------------------------------------------------------------------------------------------------|
