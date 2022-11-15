@@ -1,4 +1,5 @@
 # Nibiru public testnet phase 1 node tutorial 
+
 <a id="anchor"></a>
 
 [<img align="right" alt="Personal Website" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][nibiru-website]
@@ -9,8 +10,16 @@
 [nibiru-website]: https://docs.nibiru.fi
 [nibiru-discord]: https://discord.com/invite/pgArXgAxDD
 
-[<img  width="200" alt="nibiru" src="https://user-images.githubusercontent.com/93165931/201940888-1c2d3833-3e40-4a1e-92e8-c865c4f948ea.png">
-](https://docs.nibiru.fi/)
+|        Sections           |   Description                          |                       
+|-----------------------:|------------------------------------------:|
+| [Install the basic environment](#go) | Install golang. Command to check the version|
+| [Install other necessary environments](#necessary) | Clone repository. Compilation project |
+| [Run Node](#run) |  Initialize node. Create configuration file. Check logs & sync status. |
+| [Create Validator](#validator) |  Create valdator & wallet, check your balance. |
+| [Useful commands](https://github.com/cosmoswalk/Cosmos_tutorials/blob/main/Useful%20Tools/Other%20commands.md) | The other administration commands. |
+[<img align="right" width="100px" alt="nibiru" src="https://i.ibb.co/865XFvQ/Niburu.png">](https://docs.nibiru.fi/)
+    
+
 
 | Minimum configuration                                                                                |
 |------------------------------------------------------------------------------------------------------|
@@ -21,7 +30,7 @@
 --- 
 ### Install the basic environment
 #### The system used in this tutorial is Ubuntu20.04, please adjust some commands of other systems by yourself. It is recommended to use a foreign VPS.
-
+<a id="go"></a>
 #### Install golang
 ```
 sudo rm -rf /usr/local/go;
@@ -39,6 +48,7 @@ source $HOME/.profile
 ```
 go version
 ```
+<a id="necessary"></a>
 #### Install other necessary environments
 
 ```
@@ -51,6 +61,7 @@ make install
 After the installation is complete, you can run `nibid version` to check whether the installation is successful.
 
 Display should be v0.15.0
+<a id="run"></a>
 ### Run node
 
 #### Initialize node
@@ -75,6 +86,7 @@ seeds=""
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.nibid/config/config.toml
 sed -i.bak -e "s/^seeds *=.*/seeds = \"$seeds\"/" ~/.nibid/config/config.toml
 ```
+[Up to sections ↑](#anchor)
 
 ### Pruning settings
 ```
@@ -103,7 +115,7 @@ s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" $HOME/.nibid/config/config.toml
 ```
-
+[Up to sections ↑](#anchor)
 #### Start node 
 ```
 sudo tee <<EOF >/dev/null /etc/systemd/system/nibid.service
@@ -137,10 +149,12 @@ curl -s localhost:26657/status | jq .result | jq .sync_info
 ```
 The display `"catching_up":` shows `false` that it has been synchronized. Synchronization takes a while, maybe half an hour to an hour. If the synchronization has not started, it is usually because there are not enough peers. You can consider adding a Peer or using someone else's addrbook.
 
+[Up to sections ↑](#anchor)
 #### Replace addrbook
 ```
 wget -O $HOME/.nibid/config/addrbook.json "https://raw.githubusercontent.com/sergiomateiko/addrbooks/main/nibiru/addrbook.json"
 ```
+<a id="validator"></a>
 ### Create a validator
 #### Create wallet
 ```
@@ -151,6 +165,7 @@ nibid keys add WALLET_NAME
 ----
 ### Receive test coins
 #### Go to nibiru discord https://discord.gg/nsV3a5CdC9
+[Up to sections ↑](#anchor)
 #### Sent in #faucet channel
 ```
 $request WALLET_ADDRESS
@@ -179,6 +194,7 @@ $daemon tx staking create-validator \
     --fees 5000unibi \
     --from=WALLET_NAME
 ```
+
 #### After that, you can go to the block [explorer](https://nibiru.explorers.guru/) to check whether your validator is created successfully.
 And [other commands](https://github.com/cosmoswalk/Cosmos_tutorials/blob/main/Useful%20Tools/Other%20commands.md)
 ----
@@ -188,4 +204,4 @@ And [other commands](https://github.com/cosmoswalk/Cosmos_tutorials/blob/main/Us
 |[Official website](https://nibiru.fi/) |[Official twitter](https://twitter.com/NibiruChain) | [Discord](https://discord.gg/nsV3a5CdC9) | [Github](https://github.com/NibiruChain) | [Documentation](https://docs.nibiru.fi/)|
 -----------------------------------------------------------
 
-### [Up ↑](#anchor)
+### [Up to sections ↑](#anchor)
