@@ -23,9 +23,9 @@
 
 | Minimum configuration                                                                                |
 |------------------------------------------------------------------------------------------------------|
-- 2 CPU                                                                                                |
-- 4 GB RAM (The requirements written in the official tutorial are too high, the actual 8GB+ is enough) |
-- 100GB SSD                                                                                            |
+- 2 CPU                                                                                                
+- 4 GB RAM (The requirements written in the official tutorial are too high, the actual 8GB+ is enough) 
+- 100GB SSD                                                                                            
 
 --- 
 ### Install the basic environment
