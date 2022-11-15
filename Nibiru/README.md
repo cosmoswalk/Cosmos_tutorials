@@ -160,7 +160,7 @@ wget -O $HOME/.nibid/config/addrbook.json "https://raw.githubusercontent.com/ser
 nibid keys add WALLET_NAME
 ```
 ----
-## `Note please save the mnemonic! If you don't save it, you won't be able to restore it later.`
+## `Note please save the mnemonic and priv_validator_key.json file! If you don't save it, you won't be able to restore it later.`
 ----
 ### Receive test coins
 #### Go to nibiru discord https://discord.gg/nsV3a5CdC9
