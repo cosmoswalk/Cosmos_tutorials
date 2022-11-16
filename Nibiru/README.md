@@ -1,6 +1,7 @@
+<a id="anchor"></a>
 # Nibiru public testnet phase 1 node tutorial 
 
-<a id="anchor"></a>
+
 
 [<img align="right" alt="Personal Website" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][nibiru-website]
 [<img align="right" alt="Nibiru Discord" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg" />][nibiru-discord]
@@ -49,7 +50,14 @@ source $HOME/.profile
 go version
 ```
 <a id="necessary"></a>
-#### Install other necessary environments
+[Up to sections ↑](#anchor)
+### Install other necessary environments
+
+#### Update apt
+```
+sudo apt update && sudo apt upgrade -y
+sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu gcc git jq chrony liblz4-tool -y
+```
 
 ```
 cd
