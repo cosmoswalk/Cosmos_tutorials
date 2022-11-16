@@ -15,7 +15,7 @@
 |-----------------------:|------------------------------------------:|
 | [Install the basic environment](#go) | Install golang. Command to check the version|
 | [Install other necessary environments](#necessary) | Clone repository. Compilation project |
-| [Run Node](#run) |  Initialize node. Create configuration file. Check logs & sync status. |
+| [Run Node](#run) |  Initialize node. Create configuration files. Check logs & sync status. |
 | [Create Validator](#validator) |  Create valdator & wallet, check your balance. |
 | [Useful commands](https://github.com/cosmoswalk/Cosmos_tutorials/blob/main/Useful%20Tools/Other%20commands.md) | The other administration commands. |
 | [Explorer](https://nibiru.explorers.guru/) |  Check whether your validator is created successfully |
@@ -29,7 +29,7 @@
 - 100GB SSD                                                                                            
 
 --- 
-### Install the basic environment
+### -Install the basic environment
 #### The system used in this tutorial is Ubuntu20.04, please adjust some commands of other systems by yourself. It is recommended to use a foreign VPS.
 <a id="go"></a>
 #### Install golang
@@ -51,7 +51,7 @@ go version
 ```
 <a id="necessary"></a>
 [Up to sections ↑](#anchor)
-### Install other necessary environments
+### -Install other necessary environments
 
 #### Update apt
 ```
@@ -71,7 +71,7 @@ After the installation is complete, you can run `nibid version` to check whether
 
 Display should be v0.15.0
 <a id="run"></a>
-### Run node
+### -Run node
 
 #### Initialize node
 
@@ -97,7 +97,7 @@ sed -i.bak -e "s/^seeds *=.*/seeds = \"$seeds\"/" ~/.nibid/config/config.toml
 ```
 [Up to sections ↑](#anchor)
 
-### Pruning settings
+#### Pruning settings
 ```
 pruning="custom" && \
 pruning_keep_recent="100" && \
