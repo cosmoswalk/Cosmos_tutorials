@@ -1,5 +1,5 @@
 # Other common commands
-### _Enter your chain name instead of `CHAIN`_
+### _`CHAIN`- the name of your chain_
 ### Service management
 
 #### check log
