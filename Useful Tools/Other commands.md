@@ -1,5 +1,5 @@
 # Other common commands
-### _`CHAIN`- the name of your chain_
+### _`CHAIN`- the name of your chain. For example: `nibid`, `gaiad`, `evmosd`_
 ### Service management
 
 #### check log
