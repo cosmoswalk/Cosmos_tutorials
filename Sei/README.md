@@ -83,7 +83,7 @@ seid config chain-id atlantic-sub-2
 ```
 seid tendermint unsafe-reset-all --home $HOME/.sei
 rm $HOME/.sei/config/genesis.json
-wget -O $HOME/.sei/config/genesis.json "https://raw.githubusercontent.com/sei-protocol/testnet/master/atlantic-sub-2/genesis.json"
+wget -O $HOME/.sei/config/genesis.json "https://raw.githubusercontent.com/sei-protocol/testnet/main/atlantic-subchains/atlantic-sub-2/genesis.json"
 ```
 
 #### Set peer and seed
@@ -175,7 +175,7 @@ The display `"catching_up":` shows `false` that it has been synchronized. Synchr
 [Up to sections ↑](#anchor)
 #### Replace addrbook
 ```
-wget -O $HOME/.seid/config/addrbook.json "https://raw.githubusercontent.com/sei-protocol/testnet/blob/main/atlantic-subchains/atlantic-sub-2/addrbook.json"
+wget -O $HOME/.seid/config/addrbook.json "https://raw.githubusercontent.com/cosmoswalk/Cosmos_tutorials/main/Sei/addrbook.json"
 ```
 <a id="validator"></a>
 ### Create a validator
