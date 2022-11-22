@@ -153,6 +153,7 @@ LimitMEMLOCK=209715200
 
 [Install]
 WantedBy=multi-user.target
+EOF
 ```
 ```
 sudo systemctl daemon-reload && \
