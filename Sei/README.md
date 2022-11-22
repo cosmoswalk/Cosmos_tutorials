@@ -181,7 +181,7 @@ wget -O $HOME/.sei/config/addrbook.json "https://raw.githubusercontent.com/cosmo
 ### Create a validator
 #### Create wallet
 ```
-nibid keys add WALLET_NAME
+seid keys add WALLET_NAME
 ```
 ----
 ## `Note please save the mnemonic and priv_validator_key.json file! If you don't save it, you won't be able to restore it later.`
