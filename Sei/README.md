@@ -175,7 +175,7 @@ The display `"catching_up":` shows `false` that it has been synchronized. Synchr
 [Up to sections ↑](#anchor)
 #### Replace addrbook
 ```
-wget -O $HOME/.seid/config/addrbook.json "https://raw.githubusercontent.com/cosmoswalk/Cosmos_tutorials/main/Sei/addrbook.json"
+wget -O $HOME/.sei/config/addrbook.json "https://raw.githubusercontent.com/cosmoswalk/Cosmos_tutorials/main/Sei/addrbook.json"
 ```
 <a id="validator"></a>
 ### Create a validator
