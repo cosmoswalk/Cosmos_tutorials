@@ -60,13 +60,13 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bs
 ```
 git clone https://github.com/sei-protocol/sei-chain
 cd sei-chain
-git checkout origin/1.2.3beta
+git checkout origin/1.2.4beta
 make install
 mv $HOME/go/bin/seid /usr/bin/
 ```
 After the installation is complete, you can run `seid version` to check whether the installation is successful.
 
-Display should be v1.2.3
+Display should be v1.2.4
 <a id="run"></a>
 ### -Run node
 
