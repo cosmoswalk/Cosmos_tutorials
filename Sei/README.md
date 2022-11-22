@@ -62,7 +62,7 @@ git clone https://github.com/sei-protocol/sei-chain
 cd sei-chain
 git checkout origin/1.2.4beta
 make install
-mv $HOME/go/bin/seid /usr/bin/
+
 ```
 After the installation is complete, you can run `seid version` to check whether the installation is successful.
 
