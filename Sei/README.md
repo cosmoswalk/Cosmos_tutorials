@@ -65,7 +65,6 @@ make install
 ```
 After the installation is complete, you can run `seid version` to check whether the installation is successful.
 
-Display should be v1.2.4
 <a id="run"></a>
 ### -Run node
 
