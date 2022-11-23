@@ -60,9 +60,8 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bs
 ```
 git clone https://github.com/sei-protocol/sei-chain
 cd sei-chain
-git checkout origin/1.2.4beta
+git checkout 1.2.2beta-postfix
 make install
-
 ```
 After the installation is complete, you can run `seid version` to check whether the installation is successful.
 
