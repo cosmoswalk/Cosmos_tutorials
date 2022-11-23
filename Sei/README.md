@@ -140,9 +140,9 @@ After=network.target
 
 [Service]
 Type=simple
-User=root
+User=$USER
+ExecStart=$(which seid) start
 WorkingDirectory=/root/
-ExecStart=/root/go/bin/seid start
 Restart=on-failure
 StartLimitInterval=0
 RestartSec=3
